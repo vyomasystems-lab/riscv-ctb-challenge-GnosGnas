@@ -22,7 +22,7 @@ spike: compile
 check: test_spike.dump
 	@echo '[UpTickPro] Number of Exceptions'
 	spike -l --isa=rv32i test.elf 2> spike.log
-	grep trap_illegal_instruction spike.log > exceptions.log
+	grep exception spike.log > exceptions.log
 	cat exceptions.log
 	wc -l exceptions.log
 
