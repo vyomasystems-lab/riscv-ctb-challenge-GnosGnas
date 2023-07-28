@@ -1,5 +1,5 @@
 # Level 1 
-## Challenge 1 - Illegal
+## Challenge 3 - Illegal
 
 Error cause: Illegal instruction was caused by .word 0
 Reason and Fix:
