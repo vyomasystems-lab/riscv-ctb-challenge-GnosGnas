@@ -11,8 +11,8 @@ RVTEST_CODE_BEGIN
 
   li TESTNUM, 2
 illegal_instruction:
-  .word 164499              
-  j pass
+  .word 0              
+  j fail
   TEST_PASSFAIL
 
   .align 8
@@ -22,6 +22,8 @@ mtvec_handler:
   csrr t0, mcause
   bne t0, t1, fail
   csrr t0, mepc
+  addi t0, t0, 8 ## to skip both .word 0 and j fail
+  csrw mepc, t0
 
   mret
 

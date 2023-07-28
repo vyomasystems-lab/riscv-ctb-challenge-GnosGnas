@@ -14,6 +14,8 @@ RVTEST_CODE_BEGIN
   li t5, 3
 
 loop:
+  beqz t5, test_end
+  addi t5, t5, -1
 	lw t1, (t0)
   lw t2, 4(t0)
   lw t3, 8(t0)
