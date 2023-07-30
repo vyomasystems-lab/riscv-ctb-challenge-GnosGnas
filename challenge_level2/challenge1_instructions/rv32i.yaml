@@ -62,7 +62,7 @@ isa-instruction-distribution:
   rel_rv64i.zbr: 0
   rel_rv32i.zbt: 0
   rel_rv64i.zbt: 0
-  rel_rv32m: 10
+  rel_rv32m: 0
   rel_rv64m: 0
   rel_rv32a: 0
   rel_rv64a: 0
