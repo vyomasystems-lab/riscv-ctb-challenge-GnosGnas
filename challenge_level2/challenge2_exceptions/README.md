@@ -5,7 +5,7 @@ Error cause: Aim is to generate 10 exceptions. Initial code generates only 1
 ![Alt text](image.png)    
 
 Explanation:   
-The rv32i.yaml file doesn't specify to generate any exception and the command in the make rule check only checks for exceptions due to illegal instructions.  
+rv32i.yaml file was copied from challenge1 of level 2 and used for this challenge. The rv32i.yaml file doesn't specify to generate any exception and the command in the make rule check only checks for exceptions due to illegal instructions.  
 
 Fix:
 1. Changed ecause00 to 9 as already there was one exception getting created due to trap_illegal_instruction   
