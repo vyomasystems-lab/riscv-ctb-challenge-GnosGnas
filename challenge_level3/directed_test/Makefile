@@ -23,7 +23,7 @@ sim: spike
 	cp temp.dump rtl.dump
 	@echo '[UpTickPro] Comparison ------'
 	diff -q rtl.dump spike_temp.dump
-	
+	co
 clean:
 	@echo '[UpTickPro] Clean ------'
 	rm -rf *.elf *.disass *.log *.dump app_log code.mem signature boot.* riscv_buggy
